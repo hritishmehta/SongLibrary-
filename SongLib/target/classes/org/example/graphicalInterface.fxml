@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="mainScene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.graphicalInterfaceController">
+   <children>
+      <ListView fx:id="songList" layoutY="6.0"  prefHeight="123.0"  onMouseClicked = "#handleSelection" prefWidth="600.0" />
+      <Button fx:id="addButton" layoutX="41.0" layoutY="156.0" mnemonicParsing="false" onAction="#addFunction" text="Add" />
+      <Button  fx:id="deleteButton" layoutX="86.0" layoutY="354.0" mnemonicParsing="false" onAction="#deleteFunction" text="Delete" />
+      <Button fx:id="editButton" layoutX="126.0" layoutY="156.0" mnemonicParsing="false" onAction="#editFunction" text="Edit" />
+      <Label  fx:id="songLabel" layoutX="14.0" layoutY="209.0" text="Song" />
+      <Label  fx:id="albumLabel" layoutX="11.0" layoutY="316.0" text="Album" />
+      <Label  fx:id="yearLabel" layoutX="16.0" layoutY="281.0" text="Year" />
+      <Label  fx:id="artistLabel" layoutX="14.0" layoutY="246.0" text="Artist" />
+      <TextField  fx:id="songText" layoutX="68.0" layoutY="205.0" prefHeight="26.0" prefWidth="130.0" />
+      <TextField  fx:id="yearText" layoutX="68.0" layoutY="277.0" prefHeight="26.0" prefWidth="130.0" />
+      <TextField  fx:id="albumText" layoutX="68.0" layoutY="312.0" prefHeight="26.0" prefWidth="130.0" />
+      <TextField  fx:id="artistText" layoutX="68.0" layoutY="242.0" prefHeight="26.0" prefWidth="130.0" />
+      <TextArea  fx:id="songDisplay" layoutX="244.0" layoutY="149.0" prefHeight="212.0" prefWidth="330.0" />
+   </children>
+</AnchorPane>
